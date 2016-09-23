@@ -5,6 +5,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+import ch.bbw.addressbook.Address;
+
 public class TestAddress {
 
 	@Before
@@ -18,7 +20,9 @@ public class TestAddress {
 	
 	@Test
 	public void test2() {
-		assertTrue("Test Address", 2==2);
+		Address adresse = new Address(1, "Sven", "Frei", "6988");
+		
+		assertTrue("Test Firstname", adresse.getFirstname().equals("Sven"));
 	}
 
 }
