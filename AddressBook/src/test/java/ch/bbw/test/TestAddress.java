@@ -15,5 +15,10 @@ public class TestAddress {
 	public void test1() {
 		assertTrue("Test Address",  1==1);
 	}
+	
+	@Test
+	public void test2() {
+		assertTrue("Test Address", 2==2);
+	}
 
 }
